@@ -24,7 +24,7 @@ onde
 - $T_p$ é o tempo de processamento (nesse caso, a multiplicação),
 - $N$ é a quantidade de threads usadas.
 
-Considerando o tempo médio de cada etapa e a utlização de 4 threads, temos:
+Considerando o tempo médio de cada etapa e a utilização de 4 threads, temos:
 
 - Multiplicação de duas matrizes $500$ x $500$
   $$S = \frac{0,0049870 + 0,4351320 + 0,0019276}{0,0049870 + \frac{0,4351320}{4} + 0,0019276}$$
