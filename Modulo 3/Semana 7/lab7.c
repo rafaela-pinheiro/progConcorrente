@@ -7,7 +7,7 @@
 #include <semaphore.h>
 #include <time.h>
 
-#define TAM 5
+#define TAM 10
 
 int buffer[TAM];
 sem_t mutexProd, mutexCons, slotCheio, slotVazio;
@@ -103,7 +103,6 @@ int main(int argc, char *argv[])
     int qntdProd = atoi(argv[2]);
 
     int nthreads = qntdCons + qntdProd;
-    printf("%d cons + %d prod = %d total\n", qntdCons, qntdProd, nthreads);
     pthread_t tid[nthreads];
 
     // inicializa os semáforos
